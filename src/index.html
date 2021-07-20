@@ -1,4 +1,13 @@
-@@include('parts/header.html')
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Validation form and send to server in js</title>
+	<link rel="stylesheet" href="style.min.css">
+</head>
+<body>
 <h1>Validation form and send to server in js</h1>
 <form class='formWithValidation'>
 	<div>
@@ -6,7 +15,7 @@
 			<label>From:</label>
 		</div>
 		<div>
-			<input type='text' class='from'/>
+			<input type='text' class='from field'/>
 		</div>
 	</div>
 	<div>
@@ -14,7 +23,7 @@
 			<label>Password:</label>
 		</div>
 		<div>
-			<input type='password' class='password'/>
+			<input type='password' class='password field'/>
 		</div>
 	</div>
 	<div>
@@ -22,7 +31,7 @@
 			<label>Password confirmation:</label>
 		</div>
 		<div>
-			<input type='password' class='passwordConfirmation'/>
+			<input type='password' class='passwordConfirmation field'/>
 		</div>
 	</div>
 	<div>
@@ -30,7 +39,7 @@
 			<label>Where</label>
 		</div>
 		<div>
-			<select class='where'>
+			<select class='where field'>
 				<option></option>
 				<option value='developers'>Developers</option>
 				<option value='managers'>Managers</option>
@@ -43,9 +52,11 @@
 			<label>Message:</label>
 		</div>
 		<div>
-			<textarea class='message'></textarea>
+			<textarea class='message field'></textarea>
 		</div>
 	</div>
 	<input type='submit' class='validateBtn' value='Validate'/>
 </form>
-@@include('parts/footer.html')
+<script src="app.js"></script>
+</body>
+</html>
