@@ -1,10 +1,7 @@
 const form = document.querySelector('.formWithValidation')
-const validateBtn = form.querySelector('.validateBtn')
 const from = form.querySelector('.from')
 const password = form.querySelector('.password')
 const passwordConfirmation = form.querySelector('.passwordConfirmation')
-const where = form.querySelector('.where')
-const message = form.querySelector('.message')
 const fields = form.querySelectorAll('.field')
 
 form.addEventListener('submit', submitForm)
